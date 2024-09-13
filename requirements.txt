@@ -1,10 +1,6 @@
 transformers
-PIL
+Pillow
 requests
 torch
-urllib
 torchvision
-random
 numpy
-os
-time

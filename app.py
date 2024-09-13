@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 import os
 from supabase import create_client
 from dotenv import load_dotenv
@@ -12,6 +12,11 @@ key = os.environ.get("SUPABASE_API")
 supabase = create_client(url, key)
 
 app = Flask(__name__)
+
+
+@app.route('/')
+def home():
+    return render_template('index.html')
 
 
 @app.route('/api/v1/WeatherRecognitionModel/', methods=['POST'])
