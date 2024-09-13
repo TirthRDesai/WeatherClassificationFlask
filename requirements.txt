@@ -1,0 +1,10 @@
+transformers
+PIL
+requests
+torch
+urllib
+torchvision
+random
+numpy
+os
+time
